@@ -1,18 +1,21 @@
 function BlockPortfolio() {
     return (
         <div className="block BlockPortfolio">
-            {/*<section className="row icon-links">*/}
-                <a className={'icon-link'} href="https://github.com/my-spock">
-                    <img className="octocat"
-                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/PEO-octocat-4.svg/1000px-PEO-octocat-4.svg.png"
-                         alt="octo cat" />
+            <div className={'linkWrap'}>
+                <a className={'icon octocat'} href="https://github.com/my-spock" target={'_blank'}>
+                    GitHub
                 </a>
-                <a className={'icon-link'} href="http://stackoverflow.com/users/6156733/vulcan-becca?tab=profile">
-                    <img className="stack-overflow"
-                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Stack_Overflow_logo.svg/2000px-Stack_Overflow_logo.svg.png"
-                         alt="stack overflow" />
+            </div>
+            <div className={'linkWrap'}>
+                <a className={'icon linkedin'} href="https://www.linkedin.com/in/rebecca-plowman-037056a9" target={'_blank'}>
+                    LinkedIn
                 </a>
-            {/*</section>*/}
+            </div>
+            <div className={'linkWrap'}>
+                <a className={'icon bitbucket'} href="https://bitbucket.org/rplowman1-admin/workspace/projects/" target={'_blank'}>
+                    BitBucket
+                </a>
+            </div>
         </div>
     );
 }

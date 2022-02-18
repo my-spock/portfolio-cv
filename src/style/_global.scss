@@ -138,15 +138,28 @@ body {
   .icon {
     position: relative;
 
-    &.envelope-dots {
-      &::after {
-        content: '';
-        z-index: 1;
-        background-image: url('../images/icons8-envelope-dots-100.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: absolute;
-      }
+    &::after {
+      position: absolute;
+      content: '';
+      z-index: 1;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &.envelope-dots::after {
+      background-image: url('../images/icons8-envelope-dots-100.png');
+    }
+
+    &.octocat::after {
+      background-image: url('../images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png');
+    }
+
+    &.bitbucket::after {
+      background-image: url('../images/bitbucket-atlassian-logo.svg');
+    }
+
+    &.linkedin::after {
+      background-image: url('../images/LinkedIn-Logos/LI-In-Bug.png');
     }
   }
 }

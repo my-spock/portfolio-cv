@@ -9,7 +9,7 @@ function BlockHeader() {
 
                 <section className="col contact">
                     <a className={'button icon envelope-dots'} href="mailto:rplowman15@gmail.com">
-                        Get In Touch.
+                        Get In Touch
                     </a>
                 </section>
             </div>

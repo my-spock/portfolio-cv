@@ -24,7 +24,7 @@ body {
 body, body p {
   color: #e3d7d3;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 400;
   white-space: pre-line;
 }
@@ -53,7 +53,7 @@ body label {
 body input {
   color: #e3d7d3;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 400;
   appearance: none;
   box-sizing: border-box;
@@ -65,7 +65,7 @@ body input {
 body input::placeholder {
   color: #e3d7d3;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 body input:focus {
@@ -74,7 +74,7 @@ body input:focus {
 body textarea {
   color: #e3d7d3;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 400;
   resize: none;
   width: 100%;
@@ -88,7 +88,7 @@ body textarea {
 body textarea::placeholder {
   color: #e3d7d3;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 body a {
@@ -104,7 +104,7 @@ body a::hover {
 body button, body .button {
   color: #e3d7d3;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 400;
   width: auto;
   margin: 0.5rem auto;
@@ -133,20 +133,31 @@ body ul, body ol {
 body ul > li, body ol > li {
   color: #e3d7d3;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 400;
   list-style: none;
 }
 body .icon {
   position: relative;
 }
-body .icon.envelope-dots::after {
+body .icon::after {
+  position: absolute;
   content: "";
   z-index: 1;
-  background-image: url("../images/icons8-envelope-dots-100.png");
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
+}
+body .icon.envelope-dots::after {
+  background-image: url("../images/icons8-envelope-dots-100.png");
+}
+body .icon.octocat::after {
+  background-image: url("../images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png");
+}
+body .icon.bitbucket::after {
+  background-image: url("../images/bitbucket-atlassian-logo.svg");
+}
+body .icon.linkedin::after {
+  background-image: url("../images/LinkedIn-Logos/LI-In-Bug.png");
 }
 
 .block {
@@ -188,34 +199,63 @@ body .icon.envelope-dots::after {
 }
 .block.BlockPortfolio {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
+  flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center;
   background-color: #e3d7d3;
   min-height: 100px;
 }
-.block.BlockPortfolio .icon-link {
-  margin-top: 20px;
-  flex: 1 0 auto;
+.block.BlockPortfolio .linkWrap {
+  flex: 1 1 30%;
+  min-width: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-end;
 }
-.block.BlockPortfolio .icon-link img.octocat, .block.BlockPortfolio .icon-link img.stack-overflow {
-  max-height: 75px;
+.block.BlockPortfolio .linkWrap .icon {
+  flex: 1 0 100%;
+  margin: 100px auto 1.25rem;
+}
+.block.BlockPortfolio .linkWrap .icon.octocat::after {
+  height: 75px;
+  width: 100%;
+  bottom: 100%;
+  left: calc(50% - 2rem);
+}
+.block.BlockPortfolio .linkWrap .icon.bitbucket::after {
+  height: 50px;
+  width: 200px;
+  bottom: 100%;
+  left: -50%;
+}
+.block.BlockPortfolio .linkWrap .icon.linkedin::after {
+  height: 75px;
+  width: 100%;
+  bottom: 100%;
+  left: calc(50% - 2.188rem);
 }
 .block.BlockExperience {
   margin: 1.25rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
 }
 .block.BlockEducation .education {
   background: #201a1e;
   margin: 1.25rem;
 }
-.block.BlockFooter {
-  background-color: transparent;
-}
 .block.BlockFooter .contactBlock {
-  background-color: #e3d7d3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
 }
 .block.BlockFooter .credit-source {
-  margin: 16px;
+  margin: 3.563rem 16px 0.5rem;
 }
 .block.BlockFooter .credit-source a, .block.BlockFooter .credit-source span {
   font-size: 0.75rem;
