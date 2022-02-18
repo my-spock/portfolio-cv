@@ -1,0 +1,95 @@
+.block {
+  max-width: 100vw;
+
+  &.BlockHeader {
+    .header {
+      display: flex;
+      gap: $rem20;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-self: stretch;
+      background-color: $black;
+      color: white;
+      font-family: $passion-one;
+      margin: $rem20;
+
+      &>.col {
+        flex: 0 0 auto;
+      }
+
+      .contact {
+        text-align: center;
+        height: 100px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-items: center;
+        align-content: center;
+      }
+    }
+
+    .intro {
+      padding: $rem20 0;
+      font-family: $source-sans-pro;
+      font-size: $rem28;
+      background: $red;
+
+      .intro-content {
+        margin: $rem20;
+        text-align: center;
+        color: $cream;
+      }
+    }
+  }
+
+  &.BlockPortfolio {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $cream;
+    min-height: 100px;
+
+    .icon-link {
+      margin-top: 20px;
+      flex: 1 0 auto;
+
+      img {
+        &.octocat, &.stack-overflow {
+          max-height: 75px;
+        }
+      }
+    }
+  }
+
+  &.BlockExperience {
+    margin: $rem20;
+  }
+
+  &.BlockEducation {
+    .education {
+      background: $black;
+      margin: $rem20;
+    }
+  }
+
+  &.BlockFooter {
+    background-color: transparent;
+
+    .contactBlock {
+      background-color: $cream;
+    }
+
+    .credit-source {
+      margin: $rem16;
+
+      a, span {
+        font-size: $rem12;
+      }
+
+      span {
+        color: $red;
+      }
+    }
+  }
+}
