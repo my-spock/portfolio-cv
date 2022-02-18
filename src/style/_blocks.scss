@@ -141,9 +141,20 @@
   }
 
   &.BlockEducation {
-    .education {
-      background: $black;
-      margin: $rem20;
+    padding: $rem20;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: $gray;
+
+    &>* {
+      flex: 0 1 50%;
+      min-width: 400px;
+      margin-bottom: $rem16;
+
+      p, h3 {
+        color: $black;
+      }
     }
   }
 
@@ -154,6 +165,7 @@
       justify-content: center;
       align-items: center;
       align-self: stretch;
+      margin-top: $rem20;
     }
 
     .credit-source {

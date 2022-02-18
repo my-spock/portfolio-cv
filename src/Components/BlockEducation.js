@@ -1,30 +1,35 @@
 function BlockEducation() {
     return (
         <div className="block BlockEducation">
-            <ul className={'wrap-bcw'}>
-                <li className="title"><h3>Boise CodeWorks (Bootcamp)</h3></li>
-                <li><p><b>2016</b></p></li>
-                <li><p>HTML5, Bootstrap, CSS, Sass, Less</p></li>
-                <li><p>Javascript</p></li>
-                <li><p>C#, .Net</p></li>
-            </ul>
+            <div className={'wrap-cwi'}>
+                <h3 className="subtitle">College of Western Idaho</h3>
+                <p className={'bold'}>2022</p>
+                <p>Introduction to Server-Side Programming</p>
+                <p>Fundamentals of Database Systems</p>
+                <p>Advanced Web Application Development</p>
+            </div>
 
-            <ul className={'wrap-cwi'}>
-                <li className="title"><h3>College of Western Idaho</h3></li>
-                <li><p><b>Sexist, but true.</b></p></li>
-                <li><p>He introduced me to Sass, and taught me more advanced features of Java than were taight in class.
-                    He is also the one who made me think about web development as a career.  I thought it was all front end
-                    type of work, which doesn't interest me.  But he works in PHP, and tells me about all the cool problems
-                    that he gets to solve with logic!  I'm <b>LOVING</b> the back end side of web dev.</p></li>
-            </ul>
+            <div className={'wrap-bcw'}>
+                <h3 className="subtitle">Boise CodeWorks</h3>
+                <p className={'bold'}>2016</p>
+                <p>Full Stack Web Development</p>
+                <p>HTML5, CSS, Sass</p>
+                <p>Javascript, C#, .Net</p>
+            </div>
 
-            <ul className={'wrap-uis'}>
-                <li className="title"><h3>University of Illinois at Springfield</h3></li>
-                <li><p><b>2014 - 2016</b></p></li>
-                <li><p>Intro to Java - two semesters</p></li>
-                <li><p>Discrete Functions</p></li>
-                <li><p>Roboethics</p></li>
-            </ul>
+            <div className={'wrap-uis'}>
+                <h3 className={'subtitle'}>University of Illinois at Springfield</h3>
+                <p className={'bold'}>2014 - 2016</p>
+                <p>Intro to Java - two semesters</p>
+                <p>Discrete Functions</p>
+                <p>Roboethics</p>
+            </div>
+
+            <div className={'wrap-uis'}>
+                <h3 className={'subtitle'}>Cecil Community College</h3>
+                <p className={'bold'}>2006 - 2010</p>
+                <p>Associate of Arts in General Studies</p>
+            </div>
         </div>
     );
 }
