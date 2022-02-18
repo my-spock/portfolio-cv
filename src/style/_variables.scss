@@ -19,6 +19,7 @@ $rem24: 1.5rem;
 $rem28: 1.75rem;
 $rem32: 2rem;
 $rem35: 2.188rem;
+$rem40: 2.5rem;
 $rem57: 3.563rem;
 $rem64: 4rem;
 
@@ -40,6 +41,13 @@ $red: rgba(176, 99, 82, 1);
 @mixin title {
   font-family: $roboto;
   font-size: $rem57;
+  font-weight: $heavy;
+  color: $cream;
+}
+
+@mixin subtitle {
+  font-family: $source-sans-pro;
+  font-size: $rem40;
   font-weight: $heavy;
   color: $cream;
 }

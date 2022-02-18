@@ -33,10 +33,14 @@ body {
   h1, h2, h3 {
     font-family: $roboto;
     white-space: pre-line;
+  }
 
-    &.title {
-      @include title;
-    }
+  .title {
+    @include title;
+  }
+
+  .subtitle {
+    @include subtitle;
   }
 
   //hidden label with accessibility
@@ -160,6 +164,22 @@ body {
 
     &.linkedin::after {
       background-image: url('../images/LinkedIn-Logos/LI-In-Bug.png');
+    }
+
+    &.betacanon::after {
+      background-image: url('../images/beta-canon-logo-mark.svg');
+    }
+
+    &.golowpro::after {
+      background-image: url('../images/logo-glp.png');
+    }
+
+    &.textual::after {
+      background-image: url('../images/client-logo-textual.svg');
+    }
+
+    &.kagedmuscle::after {
+      background-image: url("../images/client-logo-kaged-muscle.svg");
     }
   }
 }

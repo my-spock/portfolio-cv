@@ -35,9 +35,15 @@ body h1, body h2, body h3 {
   font-family: "Roboto", sans-serif;
   white-space: pre-line;
 }
-body h1.title, body h2.title, body h3.title {
+body .title {
   font-family: "Roboto", sans-serif;
   font-size: 3.563rem;
+  font-weight: 700;
+  color: #e3d7d3;
+}
+body .subtitle {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #e3d7d3;
 }
@@ -159,6 +165,18 @@ body .icon.bitbucket::after {
 body .icon.linkedin::after {
   background-image: url("../images/LinkedIn-Logos/LI-In-Bug.png");
 }
+body .icon.betacanon::after {
+  background-image: url("../images/beta-canon-logo-mark.svg");
+}
+body .icon.golowpro::after {
+  background-image: url("../images/logo-glp.png");
+}
+body .icon.textual::after {
+  background-image: url("../images/client-logo-textual.svg");
+}
+body .icon.kagedmuscle::after {
+  background-image: url("../images/client-logo-kaged-muscle.svg");
+}
 
 .block {
   max-width: 100vw;
@@ -239,9 +257,45 @@ body .icon.linkedin::after {
   margin: 1.25rem;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  gap: 16px;
+  justify-content: space-around;
   align-items: center;
   align-self: stretch;
+}
+.block.BlockExperience .wrap-betacanon {
+  padding-top: 16px;
+}
+.block.BlockExperience .wrap-betacanon .betacanon {
+  margin-left: 90px;
+}
+.block.BlockExperience .wrap-betacanon .betacanon::after {
+  height: 4rem;
+  width: 90px;
+  bottom: 0;
+  left: -80px;
+}
+.block.BlockExperience .wrap-projects {
+  text-align: center;
+}
+.block.BlockExperience .wrap-projects ul {
+  margin: 1.25rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.block.BlockExperience .wrap-projects ul li.item {
+  flex: 1 0 30%;
+  min-width: 200px;
+  text-align: left;
+  margin-top: 50px;
+}
+.block.BlockExperience .wrap-projects ul li.item .icon.golowpro::after, .block.BlockExperience .wrap-projects ul li.item .icon.textual::after, .block.BlockExperience .wrap-projects ul li.item .icon.kagedmuscle::after {
+  height: 2.5rem;
+  width: 140px;
+  bottom: 1.25rem;
+  left: 0;
 }
 .block.BlockEducation .education {
   background: #201a1e;

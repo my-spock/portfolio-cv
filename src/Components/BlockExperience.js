@@ -1,36 +1,29 @@
 function BlockExperience() {
     return (
         <div className="block BlockExperience">
-            <div className="gables-ammon">
-                <ul>
-                    <li className="title"><h4>Gables of Ammon</h4></li>
-                    <li><p><b>Dishwasher, Cook: February 2013 - March 2014</b></p></li>
-                    <li>I started as a dishwasher here. The schedule was hectic, but I was meticulous in my
-                        cleaning.
-                        I wasn't making much money, so I informed my boss that I'd be looking for a new job.
-                        They had been
-                        so impressed by my work that they offered to promote me to a position as cook instead! I
-                        was pretty
-                        proud of that, because it was my first ever promotion and raise. I bring the same (okay,
-                        probably more)
-                        drive and passion to my programming.
-                    </li>
-                </ul>
+            <div className="wrap-betacanon">
+                <a className={'subtitle icon betacanon'} href={'https://www.betacanon.com/'} target={'_blank'}>Beta Canon</a>
+                <p><span className={'bold'}>Junior Web Developer: December 2018 - March 2021</span></p>
+                <p>I worked with another team member to develop multiple apps using full-stack Javascript with the Meteor.js framework (React, Node.js, MongoDB). My role included learning about any new APIs or plug-ins to simplify development. Many projects included integrating AWS, such as DynamoDB, Lambda, S3, and SES.</p>
+                <p>A few of the projects I was involved in are listed below.</p>
             </div>
 
-            <div className="teton-rehab">
+            <div className="wrap-projects">
                 <ul>
-                    <li className="title"><h4>Teton Post Acute Care and Rehab</h4></li>
-                    <li><p><b>Cook: May 2014 - June 2015</b></p></li>
-                    <li><p>Most of my responsibilities are not relevant to my current career path. However, I
-                        can't overemphasize how I learned to handle stress, tight deadlines, and cleanliness.
-                        Have you tried preparing a meal for 30 people in 4 hours? How about handling snack
-                        requests
-                        in the middle of it? Oh no! You only have enough meat for 5 people! And you need to keep
-                        your
-                        workstation clean and sanitized, avoiding cross-contamination. Yeah, I can handle
-                        deadlines
-                        while keeping my code clean and well-structured.</p></li>
+                    <li className="item">
+                        <a className={'subtitle icon golowpro'} href={'https://golowpro.org/'} target={'_blank'}/>
+                        <p>GoLowPro is a mobile application that helps people with special dietary needs to find appropriate foods nearby.</p>
+                        <p>Google Maps is integrated with custom locations. The custom locations, and the foods available at each, are populated by both CSV upload and user submitted content.</p>
+                    </li>
+                    <li className="item">
+                        <span className={'subtitle icon textual'}/>
+                        <p>Textual is an app that allows a retailer to create campaigns that send SMS offers to subscribers.</p>
+                        <p>Subscribers can order the product by replying to the SMS offer.</p>
+                    </li>
+                    <li className="item">
+                        <a className={'subtitle icon kagedmuscle'} href={'https://www.kaged.com/pages/kaged-app'} target={'_blank'}/>
+                        <p>A mobile application called Kaged Muscle, which allows users to follow weight training programs and track their progress.</p>
+                    </li>
                 </ul>
             </div>
         </div>
