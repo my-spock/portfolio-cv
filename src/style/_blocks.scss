@@ -9,8 +9,8 @@
       justify-content: flex-start;
       align-items: center;
       align-self: stretch;
-      background-color: $black;
       color: white;
+      background-color: $black;
       font-family: $passion-one;
       margin: $rem20;
 
@@ -38,6 +38,19 @@
         margin: $rem20;
         text-align: center;
         color: $cream;
+      }
+
+      .project-links {
+        display: flex;
+        gap: $rem20;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        .button {
+          color: $red;
+          background-color: $gray;
+          border-color: $black-50;
+        }
       }
     }
   }

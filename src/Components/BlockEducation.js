@@ -25,7 +25,7 @@ function BlockEducation() {
                 <p>Roboethics</p>
             </div>
 
-            <div className={'wrap-uis'}>
+            <div className={'wrap-ccc'}>
                 <h3 className={'subtitle'}>Cecil Community College</h3>
                 <p className={'bold'}>2006 - 2010</p>
                 <p>Associate of Arts in General Studies</p>

@@ -2,31 +2,33 @@ function BlockHeader() {
     return (
         <div className="block BlockHeader">
             <div className="row header">
-                <section className="col name">
+                <div className="col name">
                     <h1 className={'title'}>Rebecca Plowman</h1>
                     <h2 className={'title'}>is a web developer.</h2>
-                </section>
+                </div>
 
-                <section className="col contact">
+                <div className="col contact">
                     <a className={'button icon envelope-dots'} href="mailto:rplowman15@gmail.com">
                         Get In Touch
                     </a>
-                </section>
+                </div>
             </div>
 
             <div className="row intro">
-                <section className="intro-content">
-                        <p>I want to be challenged. I want to solve puzzles of logic. I want to spend an hour trying to
-                            find
-                            the problem with my code, only to discover that I was missing a curly bracket.</p>
-                        <p>Okay, maybe not that last one, but you get the idea.</p>
-                        <p>My one regret in life is not learning to code earlier. I spent too long wandering
-                            from major to major, looking for that magical combination that would satisfy me
-                            intellectually
-                            and allow a creative outlet. Sometimes I am overwhelmed by how much there is to learn
-                            in the world of web development, but mostly I can't wait to figure it all out!</p>
-                        <p>Add me to your team. You won't regret it.</p>
-                </section>
+                <div className="intro-content">
+                    <p>I started my career as a web developer at the end of 2018, and have enjoyed every coding challenge that it has offered me.</p>
+                    <p>With two years of experience under my belt, I started looking for new employment in the competitive job market of 2021.
+                        My skills attracted offers for front end dev positions, but I want to remain in full-stack development or move to back-end
+                        development. At College of Western Idaho (CWI), I was able to learn more server-side skills. </p>
+                    <p>I've added links to some of the projects I worked on during my semester at CWI.</p>
+                </div>
+                <div className={'project-links'}>
+                    <div className={'swdv210'}>
+                        <a className={'button'} href="https://bitbucket.org/rplowman1-admin/contactform/src/master/" target={'_blank'}>
+                            Contact Form (PHP)
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -116,7 +116,7 @@ body button, body .button {
   margin: 0.5rem auto;
   padding: 0.5rem;
   background: #b06352;
-  border: 1px solid #201a1e;
+  border: 1px solid #b06352;
   border-radius: 16px;
   color: #e3d7d3;
   font-family: "Source Sans Pro", sans-serif;
@@ -188,8 +188,8 @@ body .icon.kagedmuscle::after {
   justify-content: flex-start;
   align-items: center;
   align-self: stretch;
-  background-color: #201a1e;
   color: white;
+  background-color: #201a1e;
   font-family: "Passion One", sans-serif;
   margin: 1.25rem;
 }
@@ -214,6 +214,17 @@ body .icon.kagedmuscle::after {
   margin: 1.25rem;
   text-align: center;
   color: #e3d7d3;
+}
+.block.BlockHeader .intro .project-links {
+  display: flex;
+  gap: 1.25rem;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.block.BlockHeader .intro .project-links .button {
+  color: #b06352;
+  background-color: #c5c2c1;
+  border-color: rgba(32, 26, 30, 0.5);
 }
 .block.BlockPortfolio {
   display: flex;
