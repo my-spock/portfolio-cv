@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio-cv/static/css/main.30058ed4.css",
-    "main.js": "/portfolio-cv/static/js/main.fd3e8b5a.js",
+    "main.css": "/portfolio-cv/static/css/main.b33f6f01.css",
+    "main.js": "/portfolio-cv/static/js/main.0e20dda7.js",
     "static/media/logo-glp.png": "/portfolio-cv/static/media/logo-glp.42f62aa293343a729695.png",
     "static/media/client-logo-kaged-muscle.svg": "/portfolio-cv/static/media/client-logo-kaged-muscle.2fcaa0fefdb17fc6f207.svg",
     "static/media/bitbucket-atlassian-logo.svg": "/portfolio-cv/static/media/bitbucket-atlassian-logo.02aae9c08580975043f5.svg",
     "static/media/beta-canon-logo-mark.svg": "/portfolio-cv/static/media/beta-canon-logo-mark.bd9196b84e869d02add2.svg",
     "static/media/client-logo-textual.svg": "/portfolio-cv/static/media/client-logo-textual.54fc9e2eababe9088d9b.svg",
     "index.html": "/portfolio-cv/index.html",
-    "main.30058ed4.css.map": "/portfolio-cv/static/css/main.30058ed4.css.map",
-    "main.fd3e8b5a.js.map": "/portfolio-cv/static/js/main.fd3e8b5a.js.map"
+    "main.b33f6f01.css.map": "/portfolio-cv/static/css/main.b33f6f01.css.map",
+    "main.0e20dda7.js.map": "/portfolio-cv/static/js/main.0e20dda7.js.map"
   },
   "entrypoints": [
-    "static/css/main.30058ed4.css",
-    "static/js/main.fd3e8b5a.js"
+    "static/css/main.b33f6f01.css",
+    "static/js/main.0e20dda7.js"
   ]
 }
