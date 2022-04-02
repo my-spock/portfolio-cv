@@ -154,28 +154,28 @@ body .icon::after {
   background-repeat: no-repeat;
 }
 body .icon.envelope-dots::after {
-  background-image: url("../images/icons8-envelope-dots-100.png");
+  background-image: url("../../images/icons8-envelope-dots-100.png");
 }
 body .icon.octocat::after {
-  background-image: url("../images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png");
+  background-image: url("../../images/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png");
 }
 body .icon.bitbucket::after {
-  background-image: url("../images/bitbucket-atlassian-logo.svg");
+  background-image: url("../../images/bitbucket-atlassian-logo.svg");
 }
 body .icon.linkedin::after {
-  background-image: url("../images/LinkedIn-Logos/LI-In-Bug.png");
+  background-image: url("../../images/LinkedIn-Logos/LI-In-Bug.png");
 }
 body .icon.betacanon::after {
-  background-image: url("../images/beta-canon-logo-mark.svg");
+  background-image: url("../../images/beta-canon-logo-mark.svg");
 }
 body .icon.golowpro::after {
-  background-image: url("../images/logo-glp.png");
+  background-image: url("../../images/logo-glp.png");
 }
 body .icon.textual::after {
-  background-image: url("../images/client-logo-textual.svg");
+  background-image: url("../../images/client-logo-textual.svg");
 }
 body .icon.kagedmuscle::after {
-  background-image: url("../images/client-logo-kaged-muscle.svg");
+  background-image: url("../../images/client-logo-kaged-muscle.svg");
 }
 
 .block {
@@ -219,7 +219,7 @@ body .icon.kagedmuscle::after {
   display: flex;
   gap: 1.25rem;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 .block.BlockHeader .intro .project-links .button {
   color: #b06352;
@@ -341,4 +341,4 @@ body .icon.kagedmuscle::after {
   color: #b06352;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=imports.css.map */
