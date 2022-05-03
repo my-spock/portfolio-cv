@@ -33,6 +33,11 @@ function BlockHeader() {
                             Lending System (SQL)
                         </a>
                     </div>
+                    <div className={'swdv235'}>
+                        <a className={'button'} href="https://github.com/my-spock/disk_inventory/tree/main/swdv235_diskInventory/diskInventory" target={'_blank'}>
+                            Lending System App (ASP.Net MVC)
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
